@@ -17,21 +17,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - CrossCuting", "05 - Cr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.01 - Ioc", "04.01 - Ioc", "{182D1355-0D93-4ACD-8C94-B269AC2FE744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Ioc", "src\Integration.Ioc\Integration.Ioc.csproj", "{209295CF-A12F-4EFC-AAD8-43FC4987C170}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Ioc", "src\Integration.Ioc\Integration.Ioc.csproj", "{209295CF-A12F-4EFC-AAD8-43FC4987C170}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.02 - Data", "04.02 - Data", "{FB22F557-AC2A-46C1-9130-2A39269128B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Infra.Data", "Integration.Infra.Data\Integration.Infra.Data.csproj", "{694F5F55-C13D-4B3B-BDCC-B136D5C5EE7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Infra.Data", "Integration.Infra.Data\Integration.Infra.Data.csproj", "{694F5F55-C13D-4B3B-BDCC-B136D5C5EE7A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.01 - Entities", "03.01 - Entities", "{E4A4B575-D55B-4FA7-95C9-4662A521E19C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{5AB33AF5-B6BF-43F3-B0E7-831A843E659C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Domain.Entities", "Integration.Domain.Entities\Integration.Domain.Entities.csproj", "{1DC706A3-ADF0-4254-98F4-DEBE0F8A64D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Domain.Entities", "Integration.Domain.Entities\Integration.Domain.Entities.csproj", "{1DC706A3-ADF0-4254-98F4-DEBE0F8A64D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Application", "Integration.Application\Integration.Application.csproj", "{1A853DDB-12F8-4078-AE28-9DE7C0E2D45F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Application", "Integration.Application\Integration.Application.csproj", "{1A853DDB-12F8-4078-AE28-9DE7C0E2D45F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Api.Produto", "src\Integration.Api.Produto\Integration.Api.Produto.csproj", "{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Api.Produto", "src\Integration.Api.Produto\Integration.Api.Produto.csproj", "{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.CrossCuting.Tools", "src\Integration.CrossCuting.Tools\Integration.CrossCuting.Tools.csproj", "{4F7B6DA8-29E8-443D-8BE7-1167AAA60593}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7B6DA8-29E8-443D-8BE7-1167AAA60593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7B6DA8-29E8-443D-8BE7-1167AAA60593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7B6DA8-29E8-443D-8BE7-1167AAA60593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7B6DA8-29E8-443D-8BE7-1167AAA60593}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{1DC706A3-ADF0-4254-98F4-DEBE0F8A64D2} = {5AB33AF5-B6BF-43F3-B0E7-831A843E659C}
 		{1A853DDB-12F8-4078-AE28-9DE7C0E2D45F} = {7FF5EF03-28BD-4D04-95BA-EB4ADADE3F6A}
 		{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6} = {8315320F-2F72-450F-BAD3-C2B252FA4972}
+		{4F7B6DA8-29E8-443D-8BE7-1167AAA60593} = {37623EC4-90B6-4D4A-8714-F904BB6AB45F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {021DC7DF-2332-484B-AF46-40A4ECD4511F}

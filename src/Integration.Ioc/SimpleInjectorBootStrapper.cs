@@ -10,6 +10,7 @@ using Integration.Infra.Data.Implementations.Produtos;
 using Integration.Application.Implementations.Produtos;
 using Integration.Application.Interfaces.Produtos;
 using Microsoft.AspNetCore.Http;
+using AutoMapper;
 
 namespace Integration.Ioc
 {
@@ -19,6 +20,9 @@ namespace Integration.Ioc
         {
             // ASP.NET HttpContext dependency
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            //services.AddSingleton(Mapper.Configuration);
+            //services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
+
 
             //Repository
             services.AddTransient<IProdutoRepository, ProdutoRepository>();

@@ -35,7 +35,7 @@ namespace Integration.Application.Implementations.Produtos
 
         public IEnumerable<ProdutosViewModel> Get()
         {
-            throw new NotImplementedException();
+            return _iProdutoRepository.Get();
         }
 
         public ProdutosViewModel Get(Guid id)
