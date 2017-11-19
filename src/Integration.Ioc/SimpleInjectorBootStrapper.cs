@@ -11,6 +11,11 @@ using Integration.Application.Implementations.Produtos;
 using Integration.Application.Interfaces.Produtos;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
+using Integration.Application.Implementations.Usuarios;
+using Integration.Application.Interfaces.Usuarios;
+using Integration.Domain.Entities.Interfaces.Usuarios;
+using Integration.Infra.Data.Implementations.Usuarios;
+using Integration.CrossCuting.Tools.Jwt;
 
 namespace Integration.Ioc
 {
@@ -20,14 +25,14 @@ namespace Integration.Ioc
         {
             // ASP.NET HttpContext dependency
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            //services.AddSingleton(Mapper.Configuration);
-            //services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<IConfigurationProvider>(), sp.GetService));
-
-
+            
             //Repository
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
-
             services.AddTransient<IProdutoApplication, ProdutoApplication>();
+
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+
+            services.AddTransient<IUsuarioApplication, UsuarioApplication>();
 
             //Context
             services.AddScoped<IUnitOfWork, UnitOfWork>();

@@ -7,17 +7,20 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Integration.Infra.Data.Mapping.Produtos;
+using Integration.Infra.Data.Mapping.User;
 
 namespace Integration.Infra.Data.Contexts
 {
     public class Context : DbContext
     {
-        public virtual DbSet<ProdutosViewModel> Users { get; set; }
+        public virtual DbSet<ProdutosViewModel> Produtos { get; set; }
+        public virtual DbSet<UserViewModel> Users { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.AddConfiguration(new ProdutoMap());
+            modelBuilder.AddConfiguration(new UsuarioMap());
 
             base.OnModelCreating(modelBuilder);
         }
