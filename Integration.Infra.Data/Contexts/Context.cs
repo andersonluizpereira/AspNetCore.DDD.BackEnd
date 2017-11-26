@@ -14,7 +14,7 @@ namespace Integration.Infra.Data.Contexts
     public class Context : DbContext
     {
         public virtual DbSet<ProdutosViewModel> Produtos { get; set; }
-        public virtual DbSet<UserViewModel> Users { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

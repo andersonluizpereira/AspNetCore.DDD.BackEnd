@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Infra.Data", "I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.01 - Entities", "03.01 - Entities", "{E4A4B575-D55B-4FA7-95C9-4662A521E19C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{5AB33AF5-B6BF-43F3-B0E7-831A843E659C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5AB33AF5-B6BF-43F3-B0E7-831A843E659C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Domain.Entities", "Integration.Domain.Entities\Integration.Domain.Entities.csproj", "{1DC706A3-ADF0-4254-98F4-DEBE0F8A64D2}"
 EndProject
@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Application", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Api.Produto", "src\Integration.Api.Produto\Integration.Api.Produto.csproj", "{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.CrossCuting.Tools", "src\Integration.CrossCuting.Tools\Integration.CrossCuting.Tools.csproj", "{4F7B6DA8-29E8-443D-8BE7-1167AAA60593}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.CrossCuting.Tools", "src\Integration.CrossCuting.Tools\Integration.CrossCuting.Tools.csproj", "{4F7B6DA8-29E8-443D-8BE7-1167AAA60593}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

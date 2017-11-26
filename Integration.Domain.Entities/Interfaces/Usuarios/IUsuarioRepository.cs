@@ -7,7 +7,7 @@ namespace Integration.Domain.Entities.Interfaces.Usuarios
 {
    public interface IUsuarioRepository
    {
-       IEnumerable<UserViewModel> Logar(UserViewModel user);
-       IEnumerable<UserViewModel> BuscarUsuario(UserViewModel user);
+       IEnumerable<User> Logar(User user);
+       IEnumerable<User> BuscarUsuario(User user);
     }
 }

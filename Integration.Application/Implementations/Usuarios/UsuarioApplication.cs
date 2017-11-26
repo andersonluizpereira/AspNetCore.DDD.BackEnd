@@ -17,27 +17,27 @@ namespace Integration.Application.Implementations.Usuarios
             _iUsuarioRepository = iUsuarioRepository;
         }
 
-        public IEnumerable<UserViewModel> Get(UserViewModel user)
+        public IEnumerable<User> Get(User user)
         {
             return _iUsuarioRepository.Logar(user);
         }
 
-        public IEnumerable<UserViewModel> Get()
+        public IEnumerable<User> Get()
         {
             throw new NotImplementedException();
         }
 
-        public UserViewModel Get(Guid id)
+        public User Get(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public UserViewModel Get(int id)
+        public User Get(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Add(UserViewModel entity)
+        public void Add(User entity)
         {
             throw new NotImplementedException();
         }
@@ -47,7 +47,7 @@ namespace Integration.Application.Implementations.Usuarios
             throw new NotImplementedException();
         }
 
-        public void Update(UserViewModel entity)
+        public void Update(User entity)
         {
             throw new NotImplementedException();
         }
@@ -57,12 +57,12 @@ namespace Integration.Application.Implementations.Usuarios
             throw new NotImplementedException();
         }
 
-        public IEnumerable<UserViewModel> Find(Expression<Func<UserViewModel, bool>> predicate)
+        public IEnumerable<User> Find(Expression<Func<User, bool>> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<UserViewModel> GetUser(UserViewModel user)
+        public IEnumerable<User> GetUser(User user)
         {
             return _iUsuarioRepository.BuscarUsuario(user);
         }

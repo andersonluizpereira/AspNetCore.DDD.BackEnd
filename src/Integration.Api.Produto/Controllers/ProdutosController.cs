@@ -6,6 +6,7 @@ using Integration.Application.Interfaces.Produtos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Integration.CrossCuting.Tools.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Integration.Api.Produto.Controllers
 {
@@ -20,6 +21,7 @@ namespace Integration.Api.Produto.Controllers
             _iProdutoApplication = iProdutoApplication;
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public IActionResult Get()
         {

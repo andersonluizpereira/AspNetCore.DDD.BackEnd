@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Integration.Infra.Data.Mapping.User
 {
-    public class UsuarioMap : EntityTypeConfiguration<UserViewModel>
+    public class UsuarioMap : EntityTypeConfiguration<Domain.Entities.Models.User>
     {
-        public override void Map(EntityTypeBuilder<UserViewModel> builder)
+        public override void Map(EntityTypeBuilder<Domain.Entities.Models.User> builder)
         {
-            builder.ToTable("User");
+            builder.ToTable("Users");
             
             builder.Property(c => c.UserID)
                    .HasColumnType("varchar(20)")

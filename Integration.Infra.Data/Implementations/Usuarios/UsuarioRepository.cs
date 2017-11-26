@@ -8,19 +8,19 @@ using Integration.Infra.Data.Repository;
 
 namespace Integration.Infra.Data.Implementations.Usuarios
 {
-    public class UsuarioRepository : Repository<UserViewModel>, IUsuarioRepository
+    public class UsuarioRepository : Repository<User>, IUsuarioRepository
     {
         public UsuarioRepository(Context context) : base(context)
         {
 
         }
 
-        public IEnumerable<UserViewModel> BuscarUsuario(UserViewModel user)
+        public IEnumerable<User> BuscarUsuario(User user)
         {
             return Find(u => u.UserID == user.UserID);
         }
 
-        public IEnumerable<UserViewModel> Logar(UserViewModel use)
+        public IEnumerable<User> Logar(User use)
         {
            return Find(u=>u.UserID==use.UserID && u.AccessKey==use.AccessKey);
         }

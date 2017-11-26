@@ -8,15 +8,15 @@ namespace Integration.Application.Interfaces.Usuarios
 {
     public interface IUsuarioApplication
     {
-        IEnumerable<UserViewModel> GetUser(UserViewModel user);
-        IEnumerable<UserViewModel> Get(UserViewModel user);
-        IEnumerable<UserViewModel> Get();
-        UserViewModel Get(Guid id);
-        UserViewModel Get(int id);
-        void Add(UserViewModel entity);
+        IEnumerable<User> GetUser(User user);
+        IEnumerable<User> Get(User user);
+        IEnumerable<User> Get();
+        User Get(Guid id);
+        User Get(int id);
+        void Add(User entity);
         void Delete(int id);
-        void Update(UserViewModel entity);
+        void Update(User entity);
         int SaveChanges();
-        IEnumerable<UserViewModel> Find(Expression<Func<UserViewModel, bool>> predicate);
+        IEnumerable<User> Find(Expression<Func<User, bool>> predicate);
     }
 }

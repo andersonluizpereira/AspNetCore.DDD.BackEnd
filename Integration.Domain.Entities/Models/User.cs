@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Integration.Domain.Entities.Models
 {
-    public class UserViewModel
+    public class User
     {
         [Key]
         public string UserID { get; set; }
