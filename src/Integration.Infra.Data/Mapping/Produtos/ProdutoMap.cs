@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Integration.Domain.Entities.Models;
+
 using Integration.Infra.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Integration.Domain.Entities.Models;
 
 namespace Integration.Infra.Data.Mapping.Produtos
 {

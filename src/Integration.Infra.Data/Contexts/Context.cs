@@ -1,4 +1,4 @@
-﻿using Integration.Domain.Entities.Models;
+﻿
 using Integration.Infra.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -8,6 +8,7 @@ using System.IO;
 using System.Text;
 using Integration.Infra.Data.Mapping.Produtos;
 using Integration.Infra.Data.Mapping.User;
+using Integration.Domain.Entities.Models;
 
 namespace Integration.Infra.Data.Contexts
 {

@@ -25,7 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Integration.Application\Integration.Application.csproj" />
     <ProjectReference Include="..\Integration.CrossCuting.Tools\Integration.CrossCuting.Tools.csproj" />
+    <ProjectReference Include="..\Integration.Domain.Entities\Integration.Domain.Entities.csproj" />
     <ProjectReference Include="..\Integration.Ioc\Integration.Ioc.csproj" />
   </ItemGroup>
 

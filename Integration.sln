@@ -21,15 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Ioc", "src\Inte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.02 - Data", "04.02 - Data", "{FB22F557-AC2A-46C1-9130-2A39269128B3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Infra.Data", "Integration.Infra.Data\Integration.Infra.Data.csproj", "{694F5F55-C13D-4B3B-BDCC-B136D5C5EE7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Infra.Data", "src\Integration.Infra.Data\Integration.Infra.Data.csproj", "{694F5F55-C13D-4B3B-BDCC-B136D5C5EE7A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.01 - Entities", "03.01 - Entities", "{E4A4B575-D55B-4FA7-95C9-4662A521E19C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5AB33AF5-B6BF-43F3-B0E7-831A843E659C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Domain.Entities", "Integration.Domain.Entities\Integration.Domain.Entities.csproj", "{1DC706A3-ADF0-4254-98F4-DEBE0F8A64D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Domain.Entities", "src\Integration.Domain.Entities\Integration.Domain.Entities.csproj", "{1DC706A3-ADF0-4254-98F4-DEBE0F8A64D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Application", "Integration.Application\Integration.Application.csproj", "{1A853DDB-12F8-4078-AE28-9DE7C0E2D45F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Application", "src\Integration.Application\Integration.Application.csproj", "{1A853DDB-12F8-4078-AE28-9DE7C0E2D45F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Api.Produto", "src\Integration.Api.Produto\Integration.Api.Produto.csproj", "{CAED0D57-245D-4FC4-8045-70A0BEC4CFC6}"
 EndProject

@@ -1,26 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+
+using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
-using System.Threading.Tasks;
 using Integration.Application.Interfaces.Usuarios;
 using Integration.CrossCuting.Tools.Jwt;
 using Integration.Domain.Entities.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Integration.Api.Produto.Controllers
 {
+
     [Produces("application/json")]
     [Route("api/Login")]
     public class LoginController : Controller
     {
         private readonly IUsuarioApplication _iUsuarioApplication;
-
         public LoginController(IUsuarioApplication iUsuarioApplication)
         {
             _iUsuarioApplication = iUsuarioApplication;

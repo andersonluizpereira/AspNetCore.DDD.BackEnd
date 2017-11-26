@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Integration.Domain.Entities.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
-using Integration.Domain.Entities.Models;
+
 
 namespace Integration.Application.Interfaces.Usuarios
 {
