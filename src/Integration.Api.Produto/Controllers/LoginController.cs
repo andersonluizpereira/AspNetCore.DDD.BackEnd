@@ -9,6 +9,7 @@ using Integration.Application.Interfaces.Usuarios;
 using Integration.CrossCuting.Tools.Jwt;
 using Integration.Domain.Entities.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
@@ -16,7 +17,7 @@ namespace Integration.Api.Produto.Controllers
 {
 
     [Produces("application/json")]
-    [Route("api/Login")]
+    [EnableCors("AllowCors"), Route("api/[controller]")]
     public class LoginController : Controller
     {
         private readonly IUsuarioApplication _iUsuarioApplication;
@@ -27,6 +28,7 @@ namespace Integration.Api.Produto.Controllers
 
         [AllowAnonymous]
         [HttpPost]
+      
         public object Post(
             [FromBody]User usuario,
             [FromServices]SigningConfigurations signingConfigurations,

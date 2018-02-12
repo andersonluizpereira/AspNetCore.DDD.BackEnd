@@ -136,6 +136,24 @@ namespace Integration.Api.Produto
 
         private static void RegisterServices(IServiceCollection services)
         {
+            services.AddCors(
+                options => options.AddPolicy("AllowCors",
+                                             builder => {
+                                                 builder
+                                                     //.WithOrigins("http://localhost:4456") //AllowSpecificOrigins;  
+                                                     //.WithOrigins("http://localhost:4456", "http://localhost:4457") //AllowMultipleOrigins;  
+                                                     .AllowAnyOrigin() //AllowAllOrigins;  
+
+                                                     //.WithMethods("GET") //AllowSpecificMethods;  
+                                                     //.WithMethods("GET", "PUT") //AllowSpecificMethods;  
+                                                     //.WithMethods("GET", "PUT", "POST") //AllowSpecificMethods;  
+                                                     .WithMethods("GET", "PUT", "POST", "DELETE") //AllowSpecificMethods;  
+                                                     //.AllowAnyMethod() //AllowAllMethods;  
+
+                                                     //.WithHeaders("Accept", "Content-type", "Origin", "X-Custom-Header"); //AllowSpecificHeaders;  
+                                                     .AllowAnyHeader(); //AllowAllHeaders;  
+                                             })
+            );
             // Adding dependencies from another layers (isolated from Presentation)
             SimpleInjectorBootStrapper.RegisterServices(services);
         }
