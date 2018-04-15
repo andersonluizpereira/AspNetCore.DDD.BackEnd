@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  integration.api.produto:
+    image: ${DOCKER_REGISTRY}integrationapiproduto
+    build:
+      context: .
+      dockerfile: src/Integration.Api.Produto/Dockerfile
